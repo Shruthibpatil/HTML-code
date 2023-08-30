@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .Nimbus{
+    height: 100vh;
+    background:url(https://stage.stages.perfxcloud.com/img/Nube-Opacidad.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.input_group{
+    box-shadow: 0px 0px 10px grey;
+    height: 250px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
+.logo>img{
+    width: 100px;
+   mix-blend-mode: darken;
+}
+.input_group p{
+  flex: display;
+    align-items: center;
+    justify-content: center;
+}
+.button>.button-success{
+    border:1px gray;
+    height: 30px;
+}
+.button>.button-error{
+    border: 1px solid gray;
+    height: 30px;
+}
+
+.button-success{
+            color: white;
+            border-radius: 2px;
+            background: #8925ae;
+        }
+
+.button-error {
+            color: #330445;
+            background: rgb(242, 241, 241);
+            }
+    </style>
+</head>
+<body>
+    <div class="Nimbus">
+    <div class="input_group">
+        <div class="logo">
+         <img src="https://stage.stages.perfxcloud.com/img/perfx_logo_v3.png" alt="">
+        </div>
+        <p align="center"><b>Hello $Username,</b><br><br>Please provide the code of the Device that wants to be linked to your account and choose an action</p>
+        <input type="text" id="code" class="pure input rounded">
+        <br/>
+        <div class="button">
+        <button type="submit" id="authorize" name="authorize" class="button-success pure-button" > Authorize</button>
+        <button type="submit" id="deny" name="deny" class="button-error">Deny</button>
+    </div>
+    </div>
+</div>
+</body>
+</html>
